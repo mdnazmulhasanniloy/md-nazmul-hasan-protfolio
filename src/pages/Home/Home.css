@@ -210,13 +210,23 @@ max-width: 60rem;
         justify-content: center;
     }
     .home-content{
-        display: flex;
+        /* display: flex; */
         align-items: center;
         justify-content: center;
-        text-align: center;
+        /* text-align: center; */
 
     }
     .home-content h1{
-        font-size: 5rem;
+        font-size: 3rem;
+    }
+    .home-content h1 span{
+        font-size: 4rem;
+    }
+    .home-content .text-animate h2{
+        font-size: 2rem;
+    }
+
+    .home-content p{
+        font-size: 1.3rem;
     }
   }
