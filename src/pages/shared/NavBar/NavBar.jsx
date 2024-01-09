@@ -48,7 +48,7 @@ const navLink = document.querySelectorAll("header nav a")
             
         })
     })
-  },[])
+  },[section, navLink]) 
     return (
         <header className={`${scrolled && "sticky"} header`}>
             <a href="" className='logo'>Nazmul Hasan.</a>
