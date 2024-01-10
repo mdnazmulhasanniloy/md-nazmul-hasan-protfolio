@@ -8,7 +8,7 @@ const Education = () => {
     const ref = useRef(null);
     const {scrollYProgress} = useScroll({
         target: ref,
-        offset: ["start end", "start start"]
+        offset: ["start end", "end end"]
     })
 
  
