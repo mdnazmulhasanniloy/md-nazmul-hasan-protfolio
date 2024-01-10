@@ -18,7 +18,7 @@ const Home = () => {
                 <h2>MERN-Stack Developer</h2>
             </div>
             <p>
-            I`m a junior full-stack developer. I made many projects, similar to single item selling sites, e-commerce, travel booking, doctor appointment booking, and more. All the projects are interactive. I`m comfortable with React JS, Node Js, Express JS, MongoDB, and the capacity to write clean and productive code.
+                As a skilled full-stack developer, I am dedicated to turning ideas into innovative web applications. Explore my latest projects and articles. Showcasing my expertise in React.js and web development.
             </p>
             <div className="btn-box">
                 <a href="#" className='btn' >Hire Me</a>

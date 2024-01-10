@@ -5,6 +5,7 @@
 }
 
 .skills .skills-row{
+    margin-top: 5rem;
     display: flex;
     flex-wrap: wrap;
     gap: 5rem;
