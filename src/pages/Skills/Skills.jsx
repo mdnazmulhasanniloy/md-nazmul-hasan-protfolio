@@ -12,7 +12,7 @@ const Skills = () => {
         <>
         <section className="skills" id="skills">
             <h2 className="heading">My <span>Skills</span></h2>
-            <AllSkillsShow />
+            {/* <AllSkillsShow /> */}
             <div className="skills-row">
                 <div className="skills-column">
                     <h3 className="title">Front-end Skill</h3>

@@ -21,14 +21,14 @@ const Home = () => {
                 As a skilled full-stack developer, I am dedicated to turning ideas into innovative web applications. Explore my latest projects and articles. Showcasing my expertise in React.js and web development.
             </p>
             <div className="btn-box">
-                <a href="#" className='btn' >Hire Me</a>
-                <a href="#" className='btn' >Show My CV</a>
+                <a href="#hire-me" className='btn' >Hire Me</a>
+                <a href="" className='btn' >Show My CV</a>
             </div>
             </div>
             <div className="home-sci">
-                <a href="#"><FaGithub  /></a>
-                <a href="#"><FaLinkedinIn /></a>
-                <a href="#"><FaInstagram /></a>
+                <a href="https://github.com/mdnazmulhasanniloy" target="_blank"><FaGithub  /></a>
+                <a href="www.linkedin.com/in/mdnazmulhasan323" target="_blank"><FaLinkedinIn /></a>
+                <a href="#" target="_blank"><FaInstagram /></a>
             </div>
             {/* <div className="home-image-hover"></div> */}
         </section>

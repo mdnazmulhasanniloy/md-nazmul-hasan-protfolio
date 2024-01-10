@@ -2,11 +2,60 @@
     min-height: auto;
     padding-bottom: 7rem;
 } */
+.contact .contact-row{
+    margin-top: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+    
+}
 
+.contact-row .contact-column{
+    flex: 1 2 40rem;
+}
+
+
+.contact-column h1{
+    font-size: 5.25rem;
+    line-height: 5rem;
+    font-weight: bold;
+}
+
+.contact-column h1 span{
+    color: var(--main-color);
+}
+.contact-column .item{
+    margin-top: 3rem;
+}
+.contact-column .item h2{
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: .7rem;
+}
+.contact-column .item a{
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+.contact-row .contact-column.form-column{
+    position: relative;
+}
+.contact-row .contact-column.form-column .phone-svg{
+    /* position: absolute; */
+    stroke: var(--main-color); 
+    /* color: var(--main-color);  */
+    z-index: 1;
+}
 .contact form{
+
+    position: absolute;
     max-width: 70rem;
+    top:0;
+    left: 0;
     margin: 0 auto;
     text-align: center;
+    z-index: -1;
 
 }
 

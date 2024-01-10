@@ -8,7 +8,7 @@ const Education = () => {
     const ref = useRef(null);
     const {scrollYProgress} = useScroll({
         target: ref,
-        offset: ["start end", "end end"]
+        offset: ["start end", "center end"]
     })
 
  
@@ -17,19 +17,19 @@ const Education = () => {
         <section  className='education' id='education'>
             <h2 className="heading">My <span>Journey</span></h2>
             <div  className="education-row">
-                <div className="education-column" ref={ref}>
+                <div className="education-column" >
                     <div className="title">
                         Education
                     </div>
-                    <div className="education-box" >
+                    <div className="education-box" ref={ref}>
                     <motion.div className="education-box-animation" 
                     // initial={{scaleY:0}}
-                    style={{scaleY:scrollYProgress}}
-                    ></motion.div>
+                    style={{scaleY: scrollYProgress}}
+                    />
                      
 
                     {
-                        educations?.map(education=><div className="education-content">
+                        educations?.map((education, index)=><div className="education-content" key={index}>
                         <div className="content">
                             <div className="year"> <i><FaCalendarAlt /></i> <i>{education?.year}</i></div>
                             <h3>{education?.degree}</h3>
