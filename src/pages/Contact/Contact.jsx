@@ -25,7 +25,7 @@ const Contact = () => {
     }
     return (
         <>
-        <section ref={ref} className="contact" id='contact'>
+        <section className="contact" id='contact'>
             <motion.h2 className="heading" variants={variants}>Contact <span>Me!</span></motion.h2>
             <motion.div className="contact-row"  variants={variants} initial="initial" whileInView="animate">
                 <div className="contact-column">
@@ -43,7 +43,7 @@ const Contact = () => {
                         <a href="tel:+8801518963455">+880 1518963455</a>
                     </motion.div>
                 </div>
-                <div className="contact-column form-column">
+                <div ref={ref} className="contact-column form-column">
                     <motion.div className="phone-svg" 
                     initial={{opacity:1}} 
                     whileInView={{opacity:0}} 
