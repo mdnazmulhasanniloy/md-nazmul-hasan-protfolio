@@ -55,7 +55,7 @@ const Education = () => {
                     {
                         courses?.map((course, index)=><div className="education-content" key={index}>
                         <div className="content">
-                            <div className="year"> <i><FaCalendarAlt /></i> <i>{course?.year}</i> <a class="certificate" herf={course?.certificate }>Certificate </></div>
+                            <div className="year"> <i><FaCalendarAlt /></i> <i>{course?.year}</i> <a class="certificate" herf={course?.certificate }>Certificate </a></div>
                             <h3>{course?.courseName}</h3>
                             <p>
                                 {
