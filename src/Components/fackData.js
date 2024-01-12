@@ -4,19 +4,19 @@
             year: "2019-2023",
             school: "",
             degree: "Diploma in CSE",
-            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae voluptatem cumque odio ipsum animi, iusto nihil tempora commodi iste facere!"
+            description: "I am doing 4 years Diploma in Engineering from Comilla Private Polytechnic Institute under Bangladesh Technical Education Board."
         },
         {
             year: "2021 - present",
             school: "",
-            degree: "Web Design",
-            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae voluptatem cumque odio ipsum animi, iusto nihil tempora commodi iste facere!"
+            degree: "Fazil degree",
+            description: "I am studying in Fazil degree class in Bangladesh Islami University."
         },
         {
             year: "2020",
             school: "",
-            degree: "HSC",
-            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae voluptatem cumque odio ipsum animi, iusto nihil tempora commodi iste facere!"
+            degree: "Alim",
+            description: "I was complited my Alim Examination from Bangladesh Madrash education bord."
         },
         // {
         //     year: "2020",
@@ -28,21 +28,24 @@
 
   export  const courses =[
         {
-            year: "2020",
+            year: "Jul 2022 - Dec 2022",
             organization: "",
             courseName: "Complete Web Development",
-            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae voluptatem cumque odio ipsum animi, iusto nihil tempora commodi iste facere!"
+           certificate :"https://drive.google.com/file/d/1X2ENFhi3qgo-C5TIJosejNojpSSNnIID/view?usp=drivesdk",
+            description: "I was complite a course from Programming Hero"
         },
         {
             year: "2020",
             organization: "",
+           certificate :"https://drive.google.com/file/d/1AeFS3T8P0OC_ltSvSZ3EWT_nukb_2yhC/view?usp=drivesdk",
             courseName: "Web Design",
-            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae voluptatem cumque odio ipsum animi, iusto nihil tempora commodi iste facere!"
+            description: "I Complited the 216 hours Course From Bdtask Ltd & TEXxIT BD and incubation center project under Bangladesh HI-Tech Park Authority."
         },
         {
             year: "2020",
             organization: "",
+           certificate :"https://drive.google.com/file/d/1AbPXvi0Kw-SOcAGGfy9nHee7_88A-YAn/view?usp=drivesdk",
             courseName: "Mobile applycation project",
-            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae voluptatem cumque odio ipsum animi, iusto nihil tempora commodi iste facere!"
+            description: "I successfully Complited 200 hours For training for Mobile applycation development under of Bangladesh ICT Division."
         },
     ]
