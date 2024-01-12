@@ -85,7 +85,12 @@
  .education-content .content .year i{
     padding-right: .5rem;
  }
+.education-content .content .year.certificate{
+text-decoration: none;
+ margin-left:.5rem;
+ color: blue;
 
+}
  .education-content .content h3{
     font-size: 2rem;
  }
