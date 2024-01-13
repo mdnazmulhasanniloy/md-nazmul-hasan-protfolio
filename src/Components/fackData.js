@@ -35,17 +35,63 @@
             description: "I was complite a course from Programming Hero"
         },
         {
-            year: "2020",
+            year: "Jan 2020 - Jun 2022",
             organization: "",
            certificate :"https://drive.google.com/file/d/1AeFS3T8P0OC_ltSvSZ3EWT_nukb_2yhC/view?usp=drivesdk",
             courseName: "Web Design",
             description: "I Complited the 216 hours Course From Bdtask Ltd & TEXxIT BD and incubation center project under Bangladesh HI-Tech Park Authority."
         },
         {
-            year: "2020",
+            year: "Aug 2021 - Dec 2021",
             organization: "",
            certificate :"https://drive.google.com/file/d/1AbPXvi0Kw-SOcAGGfy9nHee7_88A-YAn/view?usp=drivesdk",
             courseName: "Mobile applycation project",
             description: "I successfully Complited 200 hours For training for Mobile applycation development under of Bangladesh ICT Division."
+        },
+    ]
+
+
+    export const frontEnd =[
+        {
+            title: "Html",
+            percentage: 95
+        },
+        {
+            title: "Css",
+            percentage: 90
+        },
+        {
+            title: "TailwindCss",
+            percentage: 85
+        },
+        {
+            title: "React Js",
+            percentage: 85
+        },
+        {
+            title: "Redux",
+            percentage: 70
+        },
+    
+    ]
+    
+    export const backEnd =[
+        {
+            title: "Node Js",
+            percentage: 70
+        },
+    
+        {
+            title: "Express Js",
+            percentage: 80
+        },
+    
+        {
+            title: "MongoDB",
+            percentage: 75
+        },
+        {
+            title: "My SQL",
+            percentage: 45
         },
     ]

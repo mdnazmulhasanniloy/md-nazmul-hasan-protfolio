@@ -37,6 +37,11 @@
     color: var(--text-color);
     font-size: 1.5rem;
     font-weight: 300;
+    transition: color .5s;
+}
+
+.contact-column .item a:hover{
+    color: var(--main-color);
 }
 .contact-row .contact-column.form-column{
     position: relative;
@@ -45,7 +50,7 @@
     /* position: absolute; */
     stroke: var(--main-color); 
     /* color: var(--main-color);  */
-    z-index: 1;
+    z-index: -1;
 }
 .contact form{
 
@@ -55,7 +60,7 @@
     left: 0;
     margin: 0 auto;
     text-align: center;
-    z-index: -1;
+    z-index: 1;
 
 }
 

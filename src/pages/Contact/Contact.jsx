@@ -10,7 +10,7 @@ const Contact = () => {
     const isInView= useInView(ref, {margin: `-100px`})
     const variants ={
         initial:{
-            y:500,
+            y:20,
             opacity: 0
         },
         animate:{
@@ -59,36 +59,35 @@ const Contact = () => {
                 <motion.form id="hire-me"
                 initial={{opacity:0}} 
                 whileInView={{opacity:1}} 
-                transition={{delay:6, duration:1}}
-                
+                transition={{delay:6, duration:1}} 
                 >
-                <div className="input-box">
+                <motion.div variants={variants} initial="initial" whileInView="animate" className="input-box">
                     <div className="input-field">
                         <input type="text" placeholder="Full Name" required/>
                         <span className="focus"></span>
                     </div>
 
-                    <div className="input-field">
+                    <motion.div variants={variants} initial="initial" whileInView="animate" className="input-field">
                         <input type="email" placeholder="Email Address" required/>
                         <span className="focus"></span>
-                    </div>
-                    <div className="input-field">
+                    </motion.div>
+                    <motion.div variants={variants} initial="initial" whileInView="animate" className="input-field">
                         <input type='tel' placeholder="Mobile Number" required/>
                         <span className="focus"></span>
-                    </div>
-                    <div className="input-field">
+                    </motion.div>
+                    <motion.div variants={variants} initial="initial" whileInView="animate" className="input-field">
                         <input type="text" placeholder="Email Subject" required/>
                         <span className="focus"></span>
-                    </div>
+                    </motion.div>
                     
-                </div>
-                <div className="textarea-field">
+                </motion.div>
+                <motion.div variants={variants} initial="initial" whileInView="animate" className="textarea-field">
                         <textarea name='' id='' cols={30} rows={8} placeholder="Your Message" required/>
                         <span className="focus"></span>
-                    </div>
-                    <div className="btn-box btns">
+                    </motion.div>
+                    <motion.div variants={variants} initial="initial" whileInView="animate" className="btn-box btns">
                         <button type='submit' className="btn">Send <IoIosSend /></button>
-                    </div>
+                    </motion.div>
             </motion.form>
                 </div>
             </motion.div>
