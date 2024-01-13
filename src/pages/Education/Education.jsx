@@ -1,6 +1,6 @@
 import {motion, useScroll } from "framer-motion";
 import "./Education.css";
-import {FaCalendarAlt} from "react-icons/fa"
+import {FaCalendarAlt} from "react-icons/fa"; 
 import { courses, educations } from "../../Components/fackData";
 import { useRef } from "react";
 
@@ -11,12 +11,26 @@ const Education = () => {
         offset: ["start end", "center end"]
     })
 
- 
-    console.log("object", scrollYProgress)
+    const variants ={
+        initial:{
+            y:20,
+            opacity: 0
+        },
+        animate:{
+            y:0,
+            opacity: 1,
+            transition:{
+                duration: 0.5,
+                staggerChildren: 0.1,
+            }
+        },
+
+    }
+
     return (
         <section  className='education' id='education'>
             <h2 className="heading">My <span>Journey</span></h2>
-            <div  className="education-row">
+            <div  className="education-row" >
                 <div className="education-column" >
                     <div className="title">
                         Education
@@ -29,7 +43,7 @@ const Education = () => {
                      
 
                     {
-                        educations?.map((education, index)=><div className="education-content" key={index}>
+                        educations?.map((education, index)=><motion.div variants={variants} initial="initial" whileInView="animate" className="education-content" key={index}>
                         <div className="content">
                             <div className="year"> <i><FaCalendarAlt /></i> <i>{education?.year}</i></div>
                             <h3>{education?.degree}</h3>
@@ -39,7 +53,7 @@ const Education = () => {
                                 } 
                             </p>
                         </div>
-                    </div>)
+                    </motion.div>)
                     }
                         
                         
@@ -53,7 +67,7 @@ const Education = () => {
                     <div className="education-box">
                          
                     {
-                        courses?.map((course, index)=><div className="education-content" key={index}>
+                        courses?.map((course, index)=><motion.div variants={variants} initial="initial" whileInView="animate" className="education-content" key={index}>
                         <div className="content">
                             <div className="year"> <i><FaCalendarAlt /></i> <i>{course?.year}</i> <a class="certificate" href={course?.certificate }>Certificate </a></div>
                             <h3>{course?.courseName}</h3>
@@ -63,7 +77,7 @@ const Education = () => {
                                 } 
                             </p>
                         </div>
-                    </div>)
+                    </motion.div>)
                     }
                         
 
