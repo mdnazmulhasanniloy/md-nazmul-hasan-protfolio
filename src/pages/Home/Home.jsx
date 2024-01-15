@@ -59,7 +59,12 @@ const Home = () => {
             <motion.a variants={variants} href="#hire-me" className="btn">
               Hire Me
             </motion.a>
-            <motion.a variants={variants} href="" className="btn">
+            <motion.a
+              variants={variants}
+              target="_blank"
+              href="https://drive.google.com/file/d/1nJzmICcKUVs7YFSgojIGnLFn_1sm0_dc/view?usp=sharing"
+              className="btn"
+            >
               Show My CV
             </motion.a>
           </div>
@@ -84,7 +89,11 @@ const Home = () => {
           >
             <FaLinkedinIn />
           </motion.a>
-          <motion.a href="#" target="_blank" variants={variants}>
+          <motion.a
+            href="https://www.instagram.com/mdnazmulhasan323/"
+            target="_blank"
+            variants={variants}
+          >
             <FaInstagram />
           </motion.a>
         </motion.div>

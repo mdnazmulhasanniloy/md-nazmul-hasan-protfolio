@@ -96,7 +96,7 @@ const Education = () => {
                       </i>{" "}
                       <i>{course?.year}</i>{" "}
                       <a class="certificate" href={course?.certificate}>
-                        Certificate{" "}
+                        Certificate
                       </a>
                     </div>
                     <h3>{course?.courseName}</h3>
