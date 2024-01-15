@@ -1,4 +1,27 @@
-   
+  export const navItem =[
+    {
+        path: "#home",
+        name: "Home"
+    },
+    {
+        path: "#about",
+        name: "About"
+    },
+    {
+        path: "#education",
+        name: "Education"
+    },
+    {
+        path: "#skills",
+        name: "Skills"
+    },
+    {
+        path: "#contact",
+        name: "contact"
+    },
+  ] 
+  
+  
   export  const educations =[
         {
             year: "2019-2023",

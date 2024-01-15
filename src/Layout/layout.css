@@ -1,0 +1,45 @@
+.iconTop {
+  position: sticky;
+  display: flex;
+  justify-content: end;
+  bottom: 5rem;
+  margin-right: 5rem;
+  z-index: 999;
+}
+.iconTop a {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem;
+  color: var(--second-bg-color);
+  background: var(--main-color);
+  border: 0.2rem solid var(--main-color);
+  border-radius: 50%;
+  z-index: 1;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.iconTop a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: var(--second-bg-color);
+  transition: 0.5s;
+  z-index: -1;
+}
+
+.iconTop a:hover::before {
+  width: 100%;
+}
+
+.iconTop a .i {
+  font-size: 2.4rem;
+}
+.iconTop a:hover {
+  color: var(--main-color);
+}

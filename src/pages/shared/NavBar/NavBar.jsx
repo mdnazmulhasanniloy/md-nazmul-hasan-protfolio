@@ -1,11 +1,9 @@
 import React, { useEffect } from 'react';
-import  "./NavBar.css"
-import { useLocation } from 'react-router-dom';
-import { FiMenu } from "react-icons/fi"
-import { IoIosClose } from "react-icons/io"
+import { motion } from "framer-motion" 
+import { navItem } from '../../../Components/fackData';
+import  "./NavBar.css" 
 
-const NavBar = () => {
-    const location = useLocation();
+const NavBar = () => { 
     const [scrolled,setScrolled]=React.useState(false);
     const [open, setOpen] = React.useState(false);
 
@@ -49,10 +47,36 @@ const navLink = document.querySelectorAll("header nav a")
         })
     })
   },[section, navLink]) 
-  console.log(open)
+ 
+  
+  const div_variants = {
+    open: {
+      transition: { staggerChildren: 0.07, delayChildren: 0.2 }
+    },
+    closed: {
+      transition: { staggerChildren: 0.05, staggerDirection: -1 }
+    }
+  };
+
+  const a_variants = {
+    open: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        y: { stiffness: 1000, velocity: -100 }
+      }
+    },
+    closed: {
+      y: 50,
+      opacity: 0,
+      transition: {
+        y: { stiffness: 1000 }
+      }
+    }
+  };
     return (
         <header className={`${scrolled && "sticky"} header`}>
-            <a href="" className='logo'>Nazmul Hasan.</a>
+            <a href="#" className='logo'>Nazmul Hasan.</a>
 
             <label onClick={()=>setOpen(!open)}  className={`hamburger ${open && "active"}`} id='menu-icon'>
               <svg viewBox="0 0 32 32" >
@@ -60,15 +84,38 @@ const navLink = document.querySelectorAll("header nav a")
                 <path className="line" d="M7 16 27 16"></path>
               </svg>
             </label>  
-            <nav onClick={()=>setOpen(!open)} className={`navbar ${open && "active"}`}>
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#education">Education</a>
-                <a href="#skills">Skills</a>
-                <a href="#contact">Contact</a>
+            <motion.nav 
+              onClick={()=>setOpen(!open)} 
+              animate={open? "open" : "close"} 
+              className={`navbar ${open && "active"}`}>
+              <motion.div variants={div_variants}>
+                  {
+                    navItem?.map((nav, index)=><motion.a 
+                        variants={a_variants} 
+                        initial={false}
+                        whileInView={{
+                          y:0,
+                          color: "#fff",
+                          opacity: 1,
+                          transition:{
+                            duration: 1,
+                          }
+                        }}
+                        exit={{
+                          y:100,
+                          color: "#fff",
+                          opacity: 0,
+                          transition:{
+                            duration: 1
+                          }
+                        }}
+                        href={nav?.path} 
+                        key={index}>{nav?.name}</motion.a>)
+                  }
+              </motion.div>
 
                 <span className="active-nav"></span>
-            </nav>
+            </motion.nav>
         </header>
     );
 };
