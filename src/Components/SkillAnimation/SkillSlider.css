@@ -1,15 +1,14 @@
 .wraper {
   margin-top: 8rem;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   /* overflow-x: hidden; */
 }
 
 .marquee {
   display: flex;
-  /* align-items: center; */
   justify-content: space-between;
   user-select: none;
-  gap: 8px;
+  gap: 8rem;
 }
 .marquee-grupe {
   flex-shrink: 0;
@@ -17,7 +16,8 @@
   align-items: center;
   justify-content: space-between;
   white-space: nowrap;
-  width: 100%;
+  width: auto;
+  gap: 8rem;
   animation: marquee-grupe-animation 30s linear infinite;
 }
 
@@ -289,9 +289,61 @@
 
 @keyframes animationLine {
   0% {
-    transform: translateX(0px);
+    transform: translateX(10px);
   }
   100% {
     transform: translateX(-66.6667%);
   }
+}
+
+@media (max-width: 1200px) {
+}
+@media (max-width: 991px) {
+}
+@media (max-width: 786px) {
+  /* .marquee-grupe {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    white-space: nowrap;
+    width: auto;
+    gap: 8rem;
+    animation: marquee-grupe-animation 30s linear infinite;
+  } */
+  /* .marquee-item {
+    height: 180px;
+    width: 179px;
+    cursor: pointer;
+    position: relative;
+    animation: node;
+    background: var(--main-color);
+    animation-delay: calc(3s * var(--i));
+  } */
+  /* .marquee-content .icons {
+    position: absolute;
+    width: 20px;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  } */
+
+  /* .marquee-content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  } */
+
+  /* .marquee-content .title {
+    margin: 0px;
+    line-height: 1.5;
+    color: rgb(255, 255, 255);
+    font-size: 10px;
+    font-weight: 500;
+    position: absolute;
+    bottom: 30px;
+    z-index: 2;
+  } */
 }
