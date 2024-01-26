@@ -4,6 +4,7 @@ import Contact from "../Contact/Contact";
 import { motion } from "framer-motion";
 import { backEnd, frontEnd } from "../../Components/fackData";
 import EncryptTitle from "../../Components/EncryptTitle/EncryptTitle";
+import SkillSlider from "../../Components/SkillAnimation/SkillSlider";
 
 const Skills = () => {
   const variants = {
@@ -84,6 +85,7 @@ const Skills = () => {
             </div>
           </motion.div>
         </div>
+        <SkillSlider />
       </section>
       <Contact />
     </>

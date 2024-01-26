@@ -1,0 +1,297 @@
+.wraper {
+  margin-top: 8rem;
+  overflow-x: hidden;
+  /* overflow-x: hidden; */
+}
+
+.marquee {
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  user-select: none;
+  gap: 8px;
+}
+.marquee-grupe {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  white-space: nowrap;
+  width: 100%;
+  animation: marquee-grupe-animation 30s linear infinite;
+}
+
+@keyframes marquee-grupe-animation {
+  from {
+    left: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.marquee-item {
+  margin-top: 40px;
+  height: 191px;
+  width: 179px;
+  cursor: pointer;
+  position: relative;
+  animation: marquee-item-animation 10s ease-in-out infinite;
+  animation-delay: calc(3s * var(--i));
+}
+
+@keyframes marquee-item-animation {
+  0% {
+    transform: translateY(0px);
+  }
+  60% {
+    transform: translateY(-60px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+/* .marquee-item {
+  margin-top: 40px;
+  height: 191px;
+  width: 179px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  align-items: center;
+  gap: 8px;
+  animation: 10s linear 12s infinite normal none running animation-lodkhm;
+  position: relative;
+  transition: width 0.5s ease-in-out 0s;
+  width: 263.286px;
+  margin-right: 10px;
+   background: var(--main-color); 
+} */
+
+.marquee-content .icons {
+  position: absolute;
+  /* width: 80%; */
+  font-size: 8rem;
+  top: 30%;
+  left: 0;
+  z-index: 2;
+}
+
+.marquee-content {
+  /* position: absolute; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.marquee-content .title {
+  margin: 0px;
+  line-height: 1.5;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 500;
+  position: absolute;
+  bottom: 30px;
+  z-index: 2;
+}
+
+.marquee-item.css::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: url(../../assets/skillBackground/css.svg) 0% 0% / contain
+    no-repeat;
+  transition: 0.5s ease 0s;
+}
+.marquee-item.js::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: url(../../assets/skillBackground/js.svg) 0% 0% / contain no-repeat;
+  transition: 0.5s ease 0s;
+}
+
+.marquee-item.tailwind::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: url(../../assets/skillBackground/tailwind.svg) 0% 0% / contain
+    no-repeat;
+  transition: 0.5s ease 0s;
+}
+
+.marquee-item.html::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: url(../../assets/skillBackground/html.svg) 0% 0% / contain
+    no-repeat;
+  transition: 0.5s ease 0s;
+}
+
+.marquee-item.node::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: url(../../assets/skillBackground/node.svg) 0% 0% / contain
+    no-repeat;
+  transition: 0.5s ease 0s;
+}
+.marquee-item.firebase::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: url(../../assets/skillBackground//firebase.svg) 0% 0% / contain
+    no-repeat;
+  transition: 0.5s ease 0s;
+}
+.marquee-item.mongodb::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: url(../../assets/skillBackground/mongodb.svg) 0% 0% / contain
+    no-repeat;
+  transition: 0.5s ease 0s;
+}
+.marquee-item.react::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: url(../../assets/skillBackground/react.svg) 0% 0% / contain
+    no-repeat;
+  transition: 0.5s ease 0s;
+}
+
+.marquee-item.css:hover::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  opacity: 1;
+  background: url(../../assets/skillBackground/css-active.svg) 0% 0% / contain
+    no-repeat;
+}
+.marquee-item.js:hover::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  opacity: 1;
+  background: url(../../assets/skillBackground/js-active.svg) 0% 0% / contain
+    no-repeat;
+}
+.marquee-item.tailwind:hover::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  opacity: 1;
+  background: url(../../assets/skillBackground/tailwind-active.svg) 0% 0% /
+    contain no-repeat;
+}
+
+.marquee-item.html:hover::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  opacity: 1;
+  background: url(../../assets/skillBackground/html-active.svg) 0% 0% / contain
+    no-repeat;
+}
+
+.marquee-item.node:hover::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  opacity: 1;
+  background: url(../../assets/skillBackground/node-active.svg) 0% 0% / contain
+    no-repeat;
+}
+.marquee-item.firebase:hover::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  opacity: 1;
+  background: url(../../assets/skillBackground/firebase-active.svg) 0% 0% /
+    contain no-repeat;
+}
+.marquee-item.mongodb:hover::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  opacity: 1;
+  background: url(../../assets/skillBackground/mongodb-active.svg) 0% 0% /
+    contain no-repeat;
+}
+.marquee-item.react:hover::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  opacity: 1;
+  background: url(../../assets/skillBackground/react-active.svg) 0% 0% / contain
+    no-repeat;
+}
+
+.line1 {
+  margin-top: 6rem;
+  overflow: hidden;
+  animation: animationLine 45s linear infinite normal none running;
+  /* animation: 45s linear 0s infinite normal none running animationLine; */
+  width: 300vw;
+  color: var(--main-color);
+}
+
+@keyframes animationLine {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-66.6667%);
+  }
+}

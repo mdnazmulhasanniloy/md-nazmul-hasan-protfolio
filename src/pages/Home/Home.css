@@ -5,10 +5,12 @@
   background-image: url("../../assets/bg-image.jpg");
   background-size: cover;
   background-position: cover;
+  z-index: 1;
 }
 
 .home-content {
   max-width: 60rem;
+  z-index: 5;
 }
 
 .home-content h1 {
@@ -160,6 +162,80 @@
   width: 100%;
 }
 
+.icons {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  justify-content: space-between;
+  font-size: 8rem;
+}
+
+.html-icon {
+  position: absolute;
+  top: 50%;
+  left: 8rem;
+  font-size: 6rem;
+  color: #e34c26;
+  filter: grayscale(50%);
+  animation: htmlAnimate 2s linear infinite alternate;
+
+  /* animation: htmlAnimate infinite 5s linear; */
+  /* background-image: linear-gradient(#e34c26 #f06529); */
+  /* background: #ebebeb; */
+  /* z-index: -1; */
+}
+
+.js-icon {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  font-size: 6rem;
+  color: #f0db4f;
+  animation: jsAnimate 2s linear infinite alternate;
+  /* animation: jsAnimate infinite 5s linear; */
+
+  /* animation-name: htmlAnimate;
+  animation-duration: 2s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; */
+}
+.react-js-icon {
+  position: absolute;
+  top: 50%;
+  right: 8rem;
+  font-size: 6rem;
+  color: #61dafb;
+  animation: reactIcon infinite 5s linear;
+}
+
+@keyframes htmlAnimate {
+  from {
+    top: 49%;
+  }
+  to {
+    top: 51%;
+  }
+}
+@keyframes jsAnimate {
+  from {
+    left: 49%;
+  }
+  to {
+    left: 51%;
+  }
+}
+@keyframes reactIcon {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 /* .home-image-hover{
     position: absolute;
     top:0;
@@ -220,5 +296,25 @@
 
   .home-content p {
     font-size: 1.3rem;
+  }
+
+  .html-icon {
+    position: absolute;
+    left: 2px;
+    top: 20px;
+    font-size: 4rem;
+  }
+
+  .js-icon {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 4rem;
+  }
+
+  .react-js-icon {
+    position: absolute;
+    top: 20%;
+    font-size: 4rem;
   }
 }

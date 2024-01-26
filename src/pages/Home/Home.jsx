@@ -1,7 +1,14 @@
 import About from "../About/About";
 import { motion } from "framer-motion";
 import "./Home.css";
-import { FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import {
+  FaGithub,
+  FaInstagram,
+  FaLinkedinIn,
+  FaReact,
+  FaHtml5,
+  FaJs,
+} from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
 
 const Home = () => {
@@ -97,6 +104,11 @@ const Home = () => {
             <FaInstagram />
           </motion.a>
         </motion.div>
+
+        <FaHtml5 className="html-icon" />
+        <FaJs className="js-icon" />
+        <FaReact className="react-js-icon" />
+
         {/* <div className="home-image-hover"></div> */}
       </section>
       <About />
