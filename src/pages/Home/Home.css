@@ -1,4 +1,5 @@
 .home {
+  position: relative;
   display: flex;
   align-items: center;
   padding: 0 9%;
@@ -172,59 +173,49 @@
   font-size: 8rem;
 }
 
-.html-icon {
+.html-bg-icon {
   position: absolute;
-  top: 50%;
+  top: 27%;
   left: 8rem;
   font-size: 6rem;
   color: #e34c26;
-  filter: grayscale(50%);
-  animation: htmlAnimate 2s linear infinite alternate;
-
-  /* animation: htmlAnimate infinite 5s linear; */
-  /* background-image: linear-gradient(#e34c26 #f06529); */
-  /* background: #ebebeb; */
-  /* z-index: -1; */
+  animation: htmlAnimate 1s linear infinite alternate;
+}
+.html-bg-icon .svg {
+  transform: rotate(-25deg);
 }
 
-.js-icon {
+.js-bg-icon {
   position: absolute;
-  top: 70%;
-  left: 50%;
+  bottom: 30%;
+  right: 50%;
   font-size: 6rem;
   color: #f0db4f;
-  animation: jsAnimate 2s linear infinite alternate;
-  /* animation: jsAnimate infinite 5s linear; */
-
-  /* animation-name: htmlAnimate;
-  animation-duration: 2s;
-  animation-direction: alternate;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear; */
+  animation: jsAnimate 1s linear infinite alternate;
 }
-.react-js-icon {
+.reactJs-bg-icon {
   position: absolute;
   top: 50%;
   right: 8rem;
   font-size: 6rem;
   color: #61dafb;
-  animation: reactIcon infinite 5s linear;
+  animation: reactIcon infinite 3s linear;
 }
 
 @keyframes htmlAnimate {
   from {
-    top: 49%;
+    transform: translateY(-10px);
   }
   to {
-    top: 51%;
+    transform: translateY(10px);
   }
 }
 @keyframes jsAnimate {
   from {
-    left: 49%;
+    transform: scale(1);
   }
   to {
-    left: 51%;
+    transform: scale(1.2, 1.2);
   }
 }
 @keyframes reactIcon {
@@ -236,26 +227,65 @@
   }
 }
 
-/* .home-image-hover{
-    position: absolute;
-    top:0;
-    right:0;
-    width:45%;
-    height: 100%;
-    background: var(--bg-color);
-    opacity: .1; 
-    transition: .5s;
+.bg-svg {
+  width: 50rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: -15%;
+  z-index: -5;
 }
 
-.home-image-hover:hover{ 
-    opacity: .8;
-} */
+.svg1 {
+  width: 50rem;
+  /* mix-blend-mode: overlay; */
+  mix-blend-mode: unset;
+  animation: svgAnimation1 infinite 5s linear;
+}
+
+.svg2 {
+  width: 18rem;
+  mix-blend-mode: overlay;
+  animation: svgAnimation2 infinite 5s linear;
+}
+
+@keyframes svgAnimation1 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes svgAnimation2 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
 
 @media (max-width: 1200px) {
+  .bg-svg {
+    left: -20%;
+  }
 }
 @media (max-width: 991px) {
+  .bg-svg {
+    left: -25%;
+    /* mix-blend-mode: overlay; */
+  }
 }
 @media (max-width: 786px) {
+  .html-bg-icon {
+    left: 1rem;
+  }
+  .bg-svg {
+    left: -30%;
+    /* mix-blend-mode: overlay; */
+  }
 }
 
 @media (max-width: 520px) {
@@ -265,6 +295,35 @@
   .home-sci a {
     width: 38px;
     height: 38px;
+  }
+
+  .html-bg-icon {
+    position: absolute;
+    left: 8px;
+    top: 20%;
+    font-size: 5rem;
+    filter: none;
+  }
+  .js-bg-icon {
+    position: absolute;
+    font-size: 4rem;
+    bottom: 20%;
+    right: 8rem;
+  }
+  .reactJs-bg-icon {
+    position: absolute;
+    font-size: 5rem;
+    top: 25%;
+  }
+  .bg-svg {
+    width: 30rem;
+    left: -33%;
+  }
+  .svg1 {
+    width: 30rem;
+  }
+  .svg1 {
+    width: 10rem;
   }
 }
 
@@ -296,25 +355,5 @@
 
   .home-content p {
     font-size: 1.3rem;
-  }
-
-  .html-icon {
-    position: absolute;
-    left: 2px;
-    top: 20px;
-    font-size: 4rem;
-  }
-
-  .js-icon {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    font-size: 4rem;
-  }
-
-  .react-js-icon {
-    position: absolute;
-    top: 20%;
-    font-size: 4rem;
   }
 }

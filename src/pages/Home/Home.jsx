@@ -10,6 +10,7 @@ import {
   FaJs,
 } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
+import BgSvg from "../../Components/SvgExports/BgSvg";
 
 const Home = () => {
   const variants = {
@@ -105,11 +106,19 @@ const Home = () => {
           </motion.a>
         </motion.div>
 
-        <FaHtml5 className="html-icon" />
-        <FaJs className="js-icon" />
-        <FaReact className="react-js-icon" />
+        <div className="html-bg-icon">
+          <FaHtml5 className="svg" />
+        </div>
+        <FaJs className="js-bg-icon" />
+        <FaReact className="reactJs-bg-icon" />
 
         {/* <div className="home-image-hover"></div> */}
+        <div className="bg-svg">
+          <BgSvg className="svg1" />
+        </div>
+        <div className="bg-svg">
+          <BgSvg className="svg2" />
+        </div>
       </section>
       <About />
     </>
